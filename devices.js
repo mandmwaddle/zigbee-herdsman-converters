@@ -6252,6 +6252,15 @@ const devices = [
             await reporting.onOff(endpoint);
         },
     },
+    {
+        zigbeeModel: ['ZHA Smart Plug'], 
+        model: 'POTLK-WH02', 
+        vendor: 'GE', 
+        description: 'Outlink smart remote outlet', 
+        supports: 'on/off', 
+		extend: preset.switch(),
+        exposes: [e.switch()],
+    },
 
     // Sengled
     {
